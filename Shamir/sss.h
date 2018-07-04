@@ -9,7 +9,7 @@
 
 #include "hazmat.h"
 #include "tweetnacl.h"
-#include <inttypes.h>
+//#include <inttypes.h>
 
 
 #ifndef sss_MLEN

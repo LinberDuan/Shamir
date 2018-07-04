@@ -11,13 +11,13 @@
 		E2633C9420ECC6A000382904 /* ShamirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2633C9320ECC6A000382904 /* ShamirTests.m */; };
 		E2633C9620ECC6A000382904 /* Shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633C8820ECC6A000382904 /* Shamir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2633CA720ECC6FB00382904 /* tweetnacl.c in Sources */ = {isa = PBXBuildFile; fileRef = E2633C9F20ECC6F900382904 /* tweetnacl.c */; };
-		E2633CA820ECC6FB00382904 /* tweetnacl.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CA020ECC6F900382904 /* tweetnacl.h */; };
+		E2633CA820ECC6FB00382904 /* tweetnacl.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CA020ECC6F900382904 /* tweetnacl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2633CAA20ECC6FB00382904 /* hazmat.c in Sources */ = {isa = PBXBuildFile; fileRef = E2633CA220ECC6F900382904 /* hazmat.c */; };
-		E2633CAC20ECC6FB00382904 /* sss.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CA420ECC6FA00382904 /* sss.h */; };
+		E2633CAC20ECC6FB00382904 /* sss.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CA420ECC6FA00382904 /* sss.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2633CAD20ECC6FB00382904 /* sss.c in Sources */ = {isa = PBXBuildFile; fileRef = E2633CA520ECC6FA00382904 /* sss.c */; };
-		E2633CAE20ECC6FB00382904 /* hazmat.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CA620ECC6FB00382904 /* hazmat.h */; };
+		E2633CAE20ECC6FB00382904 /* hazmat.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CA620ECC6FB00382904 /* hazmat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2633CB120ECC7EE00382904 /* randombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = E2633CAF20ECC7ED00382904 /* randombytes.c */; };
-		E2633CB320ECCBAF00382904 /* randombytes.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CB020ECC7EE00382904 /* randombytes.h */; };
+		E2633CB320ECCBAF00382904 /* randombytes.h in Headers */ = {isa = PBXBuildFile; fileRef = E2633CB020ECC7EE00382904 /* randombytes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2633CB520ECD10000382904 /* Shamir.m in Sources */ = {isa = PBXBuildFile; fileRef = E2633CB420ECD10000382904 /* Shamir.m */; };
 /* End PBXBuildFile section */
 
@@ -379,6 +379,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Shamir/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +404,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Shamir/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

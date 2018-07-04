@@ -12,7 +12,7 @@
 #ifndef sss_HAZMAT_H_
 #define sss_HAZMAT_H_
 
-#include <inttypes.h>
+//#include <inttypes.h>
 
 
 #define sss_KEYSHARE_LEN 33 /* 1 + 32 */
