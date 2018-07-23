@@ -11,6 +11,7 @@
 #include "tweetnacl.h"
 //#include <inttypes.h>
 
+#define sss_MLEN 512
 
 #ifndef sss_MLEN
 /*
