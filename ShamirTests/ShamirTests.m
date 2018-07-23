@@ -31,7 +31,7 @@
 }
 
 - (void)testShamir {
-    char *str = "Hello Shamir 123Hello Shamir 123fayfdsafsa23208302[]fdsaf23";
+    char *str = "Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123abcd";
     NSLog(@"strLen:%d", strlen(str));
     NSData *data = [NSData dataWithBytes:str length:strlen(str)];
     NSArray<NSData*> *shaDataArray = [Shamir create_shares:data n:9 k:2];
