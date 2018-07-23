@@ -31,14 +31,14 @@
 }
 
 - (void)testShamir {
-    char *str = "Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123Hello Shamir 123";
+    char *str = "Hello Shamir 123Hello Shamir 123fayfdsafsa23208302[]fdsaf23";
     NSLog(@"strLen:%d", strlen(str));
     NSData *data = [NSData dataWithBytes:str length:strlen(str)];
     NSArray<NSData*> *shaDataArray = [Shamir create_shares:data n:9 k:2];
     
     NSString *testStr = [NSString stringWithCharacters:shaDataArray[0].bytes length:shaDataArray[0].length];
     
-    NSData *comShares = [Shamir combine_shares:shaDataArray k:2];
+    NSData *comShares = [Shamir combine_shares:shaDataArray k:2 restoredLen:strlen(str)];
     
     NSString *comStr = [NSString stringWithCString:comShares.bytes encoding:NSUTF8StringEncoding];
     

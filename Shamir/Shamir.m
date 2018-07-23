@@ -32,22 +32,26 @@
 }
 
 + (NSData*)combine_shares:(NSArray<NSData*>*)dataArray
-                        k:(NSInteger)k {
-    
+                        k:(NSInteger)k
+              restoredLen:(NSInteger)restoredLen {
     if(dataArray.count<k) return nil;
     
-    uint8_t restored[sss_MLEN];
+    uint8_t restored[restoredLen];
     memset(restored, 0, sizeof(restored));
+    
     
     sss_Share shares[k];
     for (int i=0; i<k; i++) {
-        if(dataArray[i].length>sss_SHARE_LEN) return nil;
-        memcpy(shares[i], dataArray[i].bytes, dataArray[i].length);
+        NSData *data = dataArray[i];
+        if(data.length>sss_SHARE_LEN) return nil;
+        memcpy(shares[i], data.bytes, data.length);
     }
+    
+    
     
     sss_combine_shares(restored, shares, k);
     
-    return [NSData dataWithBytes:restored length:sss_MLEN];
+    return [NSData dataWithBytes:restored length:restoredLen];
 }
 
 @end

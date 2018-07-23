@@ -25,7 +25,8 @@ FOUNDATION_EXPORT const unsigned char ShamirVersionString[];
                                  k:(NSInteger)k;
 
 + (NSData*)combine_shares:(NSArray<NSData*>*)dataArray
-                        k:(NSInteger)k;
+                        k:(NSInteger)k
+              restoredLen:(NSInteger)restoredLen;
 
 @end
 
