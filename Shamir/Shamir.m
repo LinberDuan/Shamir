@@ -32,8 +32,7 @@
 }
 
 + (NSData*)combine_shares:(NSArray<NSData*>*)dataArray
-                        k:(NSInteger)k
-              restoredLen:(NSInteger)restoredLen {
+                        k:(NSInteger)k {
     if(dataArray.count<k) return nil;
     
     uint8_t restored[sss_MLEN];
