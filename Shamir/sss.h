@@ -11,8 +11,6 @@
 #include "tweetnacl.h"
 //#include <inttypes.h>
 
-#define sss_MLEN 128
-
 #ifndef sss_MLEN
 /*
 Length of the message (must be known at compile-time)

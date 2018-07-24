@@ -36,7 +36,7 @@
               restoredLen:(NSInteger)restoredLen {
     if(dataArray.count<k) return nil;
     
-    uint8_t restored[restoredLen];
+    uint8_t restored[sss_MLEN];
     memset(restored, 0, sizeof(restored));
     
     
@@ -51,7 +51,7 @@
     
     sss_combine_shares(restored, shares, k);
     
-    return [NSData dataWithBytes:restored length:restoredLen];
+    return [NSData dataWithBytes:restored length:sss_MLEN];
 }
 
 @end
